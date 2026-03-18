@@ -1,7 +1,3 @@
-FROM python:3.9-slim
+FROM alpine:latest
 
-WORKDIR /app
-
-COPY . /app
-
-CMD ["python", "app.py"]
+CMD ["echo", "Hello, World!"]]
