@@ -1,3 +1,5 @@
-FROM alpine:latest
+FROM nginx:1.19
 
-CMD ["echo", "Hello, World!"]]
+RUN echo "My name is Bjohn" > /usr/share/nginx/html/index.html
+
+EXPOSE 90
